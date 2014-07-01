@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Shopping List</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="wrapper group">
+		
+		<form class="group" id="userInput">
+			
+				<label for="item">Items :</label>	
+				<input  type="text" name="item" id="item">
+				<label for="qty">Quantity :</label>
+				<input type="text" name="qty" id="qty">
+				<input type="submit" value="Add" id="submit">	
+		</form>
+		
+		<div class="tabContainer">
+			<table id="list">
+				<thead>
+					<caption>Shopping List</caption>
+					<tr>
+						<th>In-complete</th>
+						<th>Items</th>
+						<th>Quantity</th>
+					</tr>
+				</thead>
+				<tbody id="data" class="return">
+				</tbody>
+			</table>
+			<table id="checked" class="group">
+				<caption>Selected Items</caption>
+				<thead>
+					<tr>
+						<th >Complete</th>
+						<th >Items</th>
+						<th >Quantity</th>
+					</tr>
+				</thead>
+				<tbody id="data" class="selected">
+				</tbody>
+			</table>
+		</div>
+	</div>	
+	<script src="javascript/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/app.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>
+<!-- e1c045e3bf3a3304d868e0d3 voucher number -->
